@@ -1,0 +1,14 @@
+name: Testing events
+on:
+  push:
+    branches:
+      - 'main'
+    paths-ignore:
+      - '.github/workflows'
+
+jobs:
+    hello-world:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Echoing Hello world
+              run: echo "Hello World"
